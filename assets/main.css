@@ -121,6 +121,15 @@ table.flyers{width:800px;}
 td.flyer{white-space:nowrap; width:50%; text-align:center; vertical-align:middle; padding:0px 0px 0px 0px;}
 td.sponsor img{width: 100%}
 
+/* Event photos */
+.photo-row{display:flex; gap:20px; width:1000px; margin:2.5em 0 2em 0;}
+.photo-row > *{flex:1; min-width:0;}
+.photo-row img{display:block; width:100%; height:240px; object-fit:cover; border-radius:4px;}
+.photo-row a:hover img{opacity:0.85;}
+.lightbox{display:none; position:fixed; inset:0; background:rgba(0,0,0,0.85); z-index:10; cursor:zoom-out;}
+.lightbox:target{display:flex; align-items:center; justify-content:center;}
+.lightbox img{max-width:90vw; max-height:90vh;}
+
 footer{font-size:0.875em; margin-top:12em; text-align:center;}
 
 /* My hacky way of making the site mobile-friendly */
